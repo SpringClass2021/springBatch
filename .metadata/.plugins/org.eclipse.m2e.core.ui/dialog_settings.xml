@@ -98,6 +98,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\karan\eclipse-workspace-springMVC\prestigepoint"/>
 			<item value="C:\Users\karan\eclipse-workspace-springMVC\Amazon"/>
 		</list>
 		<list key="projectNameTemplate">

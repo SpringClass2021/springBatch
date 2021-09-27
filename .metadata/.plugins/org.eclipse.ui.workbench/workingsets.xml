@@ -8,5 +8,12 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AmazService" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AmazWeb" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1631887469778_4" label="prestigepoint" name="prestigepoint">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/prestigepoint" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pp-admin" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pp-data" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pp-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pp-web" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1631362333935_2" label="Window Working Set" name="Aggregate for window 1631362333935"/>
 </workingSetManager>

@@ -6,4 +6,12 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>AmazService</artifactId>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>com.pp</groupId>
+		<artifactId>AmazRepo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
