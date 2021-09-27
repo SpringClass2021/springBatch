@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form:form method="POST" action="stuSignIn.do"  modelAttribute="UserDtoKey">
+	<form:form method="POST" action="submitLogin.do"  modelAttribute="UserDtoKey">
 		<table width="100%" border="0">
 			<tr>
 				<td>User Name: <form:input path="emailId" id="emailId" />

@@ -4408,3 +4408,12 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2021-09-25 11:11:17,492 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
 2021-09-25 13:40:13,744 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2021-09-25 20:36:44,070 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-09-27 08:31:41,095 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-09-27 10:01:51,255 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2021-09-27 10:01:51,708 [Worker-6: Launching Amazon] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\karan\eclipse-workspace-springMVC\Amazon
+2021-09-27 10:01:51,729 [Worker-6: Launching Amazon] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2021-09-27 10:03:33,514 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2021-09-27 10:03:33,532 [Worker-38: Launching Amazon] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\karan\eclipse-workspace-springMVC\Amazon
+2021-09-27 10:03:33,533 [Worker-38: Launching Amazon] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2021-09-27 12:39:56,699 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-09-27 19:24:24,708 [Worker-43: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/AmazService: com.pp:AmazService:0.0.1-SNAPSHOT with classifier  to /AmazService/target/classes
