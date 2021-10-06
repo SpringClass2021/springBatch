@@ -15,6 +15,15 @@
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/applicationContext-dao.xml</param-value>
+	</context-param>
 	
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
