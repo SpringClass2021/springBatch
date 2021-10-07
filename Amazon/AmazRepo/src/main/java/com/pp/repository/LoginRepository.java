@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 
+import com.pp.model.Registration;
 import com.pp.model.UserDto;
 
 @Repository
@@ -21,5 +22,15 @@ public class LoginRepository {
 		@SuppressWarnings("unchecked")
 		List<UserDto> login = (List<UserDto>) hibernateTemplate.find("from UserDto al where al.emailId = ? and al.password = ?", emailId, password);
 		return login;
+	}
+
+	public void userRegistration(Registration reg) {
+
+		String name = (String) hibernateTemplate.save(reg);
+		if(name != null) {
+			System.out.println("Registration done :"+name);
+		}else {
+			System.out.println("not done!");
+		}
 	}
 }

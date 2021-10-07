@@ -1,2 +1,3 @@
+com\pp\model\Registration.class
 com\pp\model\UserDto.class
 com\pp\repository\LoginRepository.class

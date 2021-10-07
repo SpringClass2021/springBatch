@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.pp.model.Registration;
 import com.pp.model.UserDto;
 import com.pp.repository.LoginRepository;
 import com.pp.service.LoginService;
@@ -38,6 +39,24 @@ public class LoginController{
 		logSer.userSignIn(login);
 		
 		map.put("UserDtoKey", login);
+		return "login";
+	}
+	
+	@RequestMapping("/showRegistration")
+	public String showRegistration(Map<String, Object> map) {
+		System.out.println("Inside Login Controller");
+		map.put("registrationKey", new Registration());
+		return "registration";
+	}
+	
+	@RequestMapping(value = "/submitRegistration", method = RequestMethod.POST)
+	public String submitRegistration(@ModelAttribute("RegistrationKey") Registration reg, Map<String, Object> map) {
+		System.out.println("firstname: "+reg.getFirstname());
+		System.out.println("lastname: "+reg.getFirstname());
+		
+		loginRepo.userRegistration(reg);
+		
+		map.put("registrationKey", reg);
 		return "login";
 	}
 }

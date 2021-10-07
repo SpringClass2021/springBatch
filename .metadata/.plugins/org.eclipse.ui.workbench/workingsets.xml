@@ -15,5 +15,11 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pp-service" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pp-web" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1633578738078_5" label="Carwale" name="Carwale">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Carwale" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/car-repo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/car-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/car-web" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1631362333935_2" label="Window Working Set" name="Aggregate for window 1631362333935"/>
 </workingSetManager>

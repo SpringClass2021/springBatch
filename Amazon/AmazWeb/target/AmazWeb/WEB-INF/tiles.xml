@@ -9,9 +9,14 @@
     <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
   </definition>
   
-  <!-- Mapping for Welcome Page -->
+  <!-- Mapping for login Page -->
   <definition name="login" id="login" extends="baseTemplate">
     <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+  </definition>
+  
+  <!-- Mapping for Registration Page -->
+  <definition name="registration" id="registration" extends="baseTemplate">
+    <put-attribute name="body" value="/WEB-INF/jsp/registration.jsp" />
   </definition>
   
   </tiles-definitions>
