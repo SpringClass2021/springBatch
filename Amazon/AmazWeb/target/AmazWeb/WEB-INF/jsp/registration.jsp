@@ -9,21 +9,21 @@
 	<form:form method="POST" action="submitRegistration.do"  modelAttribute="RegistrationKey">
 		<table width="100%" border="0">
 			<tr>
-				<td>User Name: <form:input path="firstname" id="firstname" />
+				<td>Firstname: <form:input path="firstname" id="firstname" />
 				</td>
 			</tr>
 			<tr>
-				<td>Password: <form:password path="lastname" id="lastname" /></td>
+				<td>Lastname: <form:input path="lastname" id="lastname" /></td>
 			</tr>
 			<tr>
-				<td>User Name: <form:input path="mobile" id="mobile" />
+				<td>Mobile: <form:input path="mobile" id="mobile" />
 				</td>
 			</tr>
 			<tr>
-				<td>User Name: <form:input path="email" id="email" />
+				<td>Email: <form:input path="email" id="email" />
 				</td>
 			</tr><tr>
-				<td>User Name: <form:password path="password" id="password" />
+				<td>Password: <form:password path="password" id="password" />
 				</td>
 			</tr>
 			<tr>

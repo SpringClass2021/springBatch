@@ -14,9 +14,5 @@
     <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
   </definition>
   
-  <!-- Mapping for Registration Page -->
-  <definition name="registration" id="registration" extends="baseTemplate">
-    <put-attribute name="body" value="/WEB-INF/jsp/registration.jsp" />
-  </definition>
   
   </tiles-definitions>

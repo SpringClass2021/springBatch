@@ -1,3 +1,3 @@
 <%
-	response.sendRedirect("showRegistration.do");
+	response.sendRedirect("showLogin.do");
 %>

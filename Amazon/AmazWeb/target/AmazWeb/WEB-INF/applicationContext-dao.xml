@@ -30,12 +30,12 @@
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql:localhost:3306:springmvc"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/springmvc"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="1234"></property>
 	</bean>
 
-	<bean id="mySessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+	<bean id="mySessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
 		<property name="packagesToScan">
 			<list>
 				<value>com.pp.model</value>
@@ -44,9 +44,7 @@
 		<property name="hibernateProperties">
 			<ref local="hibernateProperties" />
 		</property>
-		<property name="dataSource">
-			<ref bean="dataSource" />
-		</property>
+		<property name="dataSource" ref="dataSource"></property>
 	</bean>
 
 	<bean id="hibernateProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
@@ -55,6 +53,10 @@
         <prop key="hibernate.show_sql">true</prop>
         <prop key="hibernate.hbm2ddl.auto">create</prop>
         <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+        
+        <prop key="hibernate.current_session_context_class">
+					org.hibernate.context.internal.ThreadLocalSessionContext
+				</prop>
       </props>
     </property>
   </bean>

@@ -21,5 +21,11 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/car-service" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/car-web" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1633752258145_6" label="pagar" name="pagar">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pagar" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pagar-repo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pagar-services" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pagar-web" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1631362333935_2" label="Window Working Set" name="Aggregate for window 1631362333935"/>
 </workingSetManager>

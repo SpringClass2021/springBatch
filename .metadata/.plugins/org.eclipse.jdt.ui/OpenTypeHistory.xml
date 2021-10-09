@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=pp-data/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.aartek.prestigepoint.repository{LoginRepository.java[LoginRepository" modifiers="513" timestamp="1475995784000"/>
     <typeInfo handle="=pp-data/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.aartek.prestigepoint.repositoryImpl{LoginRepositoryImpl.java[LoginRepositoryImpl" modifiers="1" timestamp="1475995784000"/>
     <typeInfo handle="=pp-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.aartek.prestigepoint.serviceImpl{LoginServiceImpl.java[LoginServiceImpl" modifiers="1" timestamp="1475995784000"/>
+    <typeInfo handle="=pp-data/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.aartek.prestigepoint.repository{LoginRepository.java[LoginRepository" modifiers="513" timestamp="1475995784000"/>
+    <typeInfo handle="=pp-data/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.aartek.prestigepoint.model{Registration.java[Registration" modifiers="1" timestamp="1475995784000"/>
 </typeInfoHistroy>
