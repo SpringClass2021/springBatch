@@ -2,8 +2,6 @@ package com.pp.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,19 +10,18 @@ import javax.persistence.Table;
 public class UserDto {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="firstname")
 	private String firstname;
-	
+
 	@Column(name="lastname")
 	private String lastname;
-	
+
 	@Column(name="mobile")
-	private long mobile;
-	
+	private String mobile;
+
 	@Column(name="emailId")
 	private String emailId;
-	
+
 	@Column(name="password")
 	private String password;
 
@@ -44,11 +41,11 @@ public class UserDto {
 		this.lastname = lastname;
 	}
 
-	public long getMobile() {
+	public String getMobile() {
 		return mobile;
 	}
 
-	public void setMobile(long mobile) {
+	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
@@ -66,5 +63,9 @@ public class UserDto {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String toString() {
+		return "[firstname:"+this.getFirstname()+" lastname:"+this.getLastname()+" mobile:"+this.getMobile()+" email:"+this.getEmailId()+" password:"+this.getPassword()+"]";
 	}
 }

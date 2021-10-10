@@ -14,13 +14,13 @@ public class LoginRepository {
 	@Autowired
 	private HibernateTemplate hibernateTemplate;
 
-	public List<UserDto> adminSignIn(String emailId, String password) {
-		System.out.println("Repo Email >> "+emailId);
-		System.out.println("Repo Password >> "+password);
+	public List<UserDto> adminSignIn(UserDto login) {
+		System.out.println("Repo Email >> "+login.getEmailId());
+		System.out.println("Repo Password >> "+login.getPassword());
 
 		@SuppressWarnings("unchecked")
-		List<UserDto> login = (List<UserDto>) hibernateTemplate.find("from UserDto al where al.emailId = ? and al.password = ?", emailId, password);
-		return login;
+		List<UserDto> user = (List<UserDto>) hibernateTemplate.find("from UserDto al where al.emailId = ? and al.password = ?", login.getEmailId(), login.getPassword());
+		return user;
 	}
 
 	

@@ -33,7 +33,7 @@
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/springmvc?useSSL=false" />
+			value="jdbc:mysql://localhost:3306/pagar?useSSL=false" />
 		<property name="username" value="root" />
 		<property name="password" value="1234" />
 	</bean>

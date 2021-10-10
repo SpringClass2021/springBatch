@@ -6,6 +6,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+		<p><a href="showRegistration.do">Registration here</a></p>
 	<form:form method="POST" action="submitLogin.do"  modelAttribute="UserDtoKey">
 		<table width="100%" border="0">
 			<tr>

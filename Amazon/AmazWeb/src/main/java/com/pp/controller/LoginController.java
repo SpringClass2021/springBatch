@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.pp.model.UserDto;
-import com.pp.repository.LoginRepository;
 import com.pp.service.LoginService;
 
 
@@ -17,10 +16,7 @@ import com.pp.service.LoginService;
 public class LoginController{
 	
 	@Autowired
-	public LoginService logSer;
-	
-	@Autowired
-	public LoginRepository loginRepo;
+	private LoginService logSer;
 	
 	@RequestMapping("/showLogin")
 	public String showLogin(Map<String, Object> map) {
@@ -30,14 +26,13 @@ public class LoginController{
 	}
 	
 	@RequestMapping(value = "/submitLogin", method = RequestMethod.POST)
-	public String submitLogin(@ModelAttribute("UserDtoKey") UserDto login, Map<String, Object> map) {
+	public String submitLogin(@ModelAttribute("UserDtoKey") UserDto login) {
+		System.out.println("Inside submitLogin method");
+		
 		System.out.println("Email: "+login.getEmailId());
 		System.out.println("Password: "+login.getPassword());
 		
-		//Service call
 		logSer.userSignIn(login);
-		
-		map.put("UserDtoKey", login);
 		return "login";
 	}
 }

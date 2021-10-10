@@ -6,6 +6,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+	<p><a href="showLogin.do">Login here</a></p>
 	<form:form method="POST" action="submitRegistration.do"  modelAttribute="RegistrationKey">
 		<table width="100%" border="0">
 			<tr>
@@ -20,7 +22,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td>Email: <form:input path="email" id="email" />
+				<td>Email: <form:input path="emailId" id="emailId" />
 				</td>
 			</tr><tr>
 				<td>Password: <form:password path="password" id="password" />

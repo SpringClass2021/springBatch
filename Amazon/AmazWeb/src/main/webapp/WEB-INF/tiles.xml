@@ -15,4 +15,10 @@
   </definition>
   
   
+    <!-- Mapping for login Page -->
+   <definition name="registration" id="registration" extends="baseTemplate">
+	   <put-attribute name="body" value="/WEB-INF/jsp/registration.jsp" />
+	</definition>
+  
+  
   </tiles-definitions>

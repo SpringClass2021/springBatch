@@ -13,12 +13,16 @@ public class LoginService {
 
 	@Autowired
 	private LoginRepository loginRepository;
-	
-		public void userSignIn(UserDto login) {
-			
-			List<UserDto> list = loginRepository.adminSignIn(login.getEmailId(), login.getPassword());
+
+	public void userSignIn(UserDto login) {
+
+		List<UserDto> list = loginRepository.adminSignIn(login);
+		if(list !=null) {
 			for (UserDto userDto : list) {
-				System.out.println("Email :"+userDto.getEmailId()+" Password :"+userDto.getPassword());
+				System.out.println(userDto);
 			}
+		}else {
+			System.out.println("User Not Found!");
 		}
+	}
 }
