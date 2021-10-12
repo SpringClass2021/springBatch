@@ -11879,3 +11879,4 @@ java.lang.IllegalStateException: Preference node "org.eclipse.wst.validation" ha
 2021-10-12 18:34:53,145 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-10-12 18:34:53,147 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\karan\eclipse-workspace-springMVC\pagar\pagar-web\src\test\resources
 2021-10-12 18:57:48,862 [Worker-16: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/AmazService: com.pp:AmazService:0.0.1-SNAPSHOT with classifier  to /AmazService/target/classes
+2021-10-12 18:57:48,869 [Worker-16: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/AmazRepo: com.pp:AmazRepo:0.0.1-SNAPSHOT with classifier  to /AmazRepo/target/classes
