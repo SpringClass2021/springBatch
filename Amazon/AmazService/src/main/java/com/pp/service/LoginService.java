@@ -17,7 +17,7 @@ public class LoginService {
 	public void userSignIn(UserDto login) {
 
 		List<UserDto> list = loginRepository.adminSignIn(login);
-		if(list !=null) {
+		if(list != null) {
 			for (UserDto userDto : list) {
 				System.out.println(userDto);
 			}

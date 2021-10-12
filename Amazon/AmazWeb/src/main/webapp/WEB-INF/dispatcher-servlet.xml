@@ -21,7 +21,7 @@
 			org.springframework.web.servlet.view.tiles2.TilesView
 		</value>
 	</property>
-</bean>
+	</bean>
 	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
 		<property name="definitions">
 			<list>

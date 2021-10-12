@@ -3,10 +3,9 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
-
 		<p><a href="showRegistration.do">Registration here</a></p>
 	<form:form method="POST" action="submitLogin.do"  modelAttribute="UserDtoKey">
 		<table width="100%" border="0">
