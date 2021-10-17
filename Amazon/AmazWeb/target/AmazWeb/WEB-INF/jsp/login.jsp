@@ -3,15 +3,15 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
-
 		<p><a href="showRegistration.do">Registration here</a></p>
+		<p><a href="showProduct.do">Product</a></p>
 	<form:form method="POST" action="submitLogin.do"  modelAttribute="UserDtoKey">
 		<table width="100%" border="0">
 			<tr>
-				<td>User Name: <form:input path="emailId" id="emailId" />
+				<td>Email: <form:input path="emailId" id="emailId" />
 				</td>
 			</tr>
 			<tr>

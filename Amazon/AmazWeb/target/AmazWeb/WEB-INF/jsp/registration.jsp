@@ -3,29 +3,43 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-<title>Insert title here</title>
+<style type="text/css">
+#color{ color:red; }
+</style>
+<title>Registration</title>
 </head>
 <body>
 
 	<p><a href="showLogin.do">Login here</a></p>
+	<p><a href="showProduct.do">Product</a></p>
 	<form:form method="POST" action="submitRegistration.do"  modelAttribute="RegistrationKey">
 		<table width="100%" border="0">
 			<tr>
-				<td>Firstname: <form:input path="firstname" id="firstname" />
+				<td>
+				<p id="color"><form:errors path="firstname"/><p>
+				Firstname: <form:input path="firstname" id="firstname" />
 				</td>
 			</tr>
 			<tr>
-				<td>Lastname: <form:input path="lastname" id="lastname" /></td>
+				<td>
+				<p id="color"><form:errors path="lastname"/></p>
+				Lastname: <form:input path="lastname" id="lastname" /></td>
 			</tr>
 			<tr>
-				<td>Mobile: <form:input path="mobile" id="mobile" />
+				<td>
+				<p id="color"><form:errors path="mobile"/></p>
+				Mobile: <form:input path="mobile" id="mobile" />
 				</td>
 			</tr>
 			<tr>
-				<td>Email: <form:input path="email" id="email" />
+				<td>
+				<p id="color"><form:errors path="emailId"/></p>
+				Email: <form:input path="emailId" id="emailId" />
 				</td>
 			</tr><tr>
-				<td>Password: <form:password path="password" id="password" />
+				<td>
+				<p id="color"><form:errors path="password"/></p>
+				Password: <form:password path="password" id="password" />
 				</td>
 			</tr>
 			<tr>

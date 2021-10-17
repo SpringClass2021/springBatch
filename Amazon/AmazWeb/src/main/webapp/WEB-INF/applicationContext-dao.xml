@@ -64,4 +64,13 @@
 	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
 		<property name="sessionFactory" ref="mySessionFactory" />
 	</bean>
+	
+	<!--  <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+    <property name="basenames">
+      <list>
+        <value>message</value>
+        <value>hibernate</value>
+      </list>
+    </property>
+  </bean> -->
 </beans>

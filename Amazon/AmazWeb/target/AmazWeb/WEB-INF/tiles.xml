@@ -15,9 +15,14 @@
   </definition>
   
   
-    <!-- Mapping for login Page -->
+    <!-- Mapping for registration Page -->
    <definition name="registration" id="registration" extends="baseTemplate">
 	   <put-attribute name="body" value="/WEB-INF/jsp/registration.jsp" />
+	</definition>
+	
+	 <!-- Mapping for product Page -->
+   <definition name="product" id="product" extends="baseTemplate">
+	   <put-attribute name="body" value="/WEB-INF/jsp/product.jsp" />
 	</definition>
   
   

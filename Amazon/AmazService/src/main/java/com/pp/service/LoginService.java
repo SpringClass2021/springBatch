@@ -17,12 +17,13 @@ public class LoginService {
 	public void userSignIn(UserDto login) {
 
 		List<UserDto> list = loginRepository.adminSignIn(login);
-		if(list != null) {
-			for (UserDto userDto : list) {
+
+		for (UserDto userDto : list) {
+			if(userDto.getFirstname()!=null) {
 				System.out.println(userDto);
+			}else {
+				System.out.println("User Not Found!");
 			}
-		}else {
-			System.out.println("User Not Found!");
 		}
 	}
 }
