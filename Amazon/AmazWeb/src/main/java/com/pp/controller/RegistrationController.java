@@ -31,10 +31,9 @@ public class RegistrationController {
 	}
 
 	@RequestMapping(value="/submitRegistration" , method = RequestMethod.POST)
-	public String submitRegistration(@ModelAttribute("RegistrationKey") UserDto registration ,BindingResult result,ModelMap model) {
+	public String submitRegistration(@ModelAttribute("RegistrationKey") UserDto registration ,BindingResult result,ModelMap model,Map<String,Object> map) {
 		System.out.println("Inside submitRegistration method");
 
-		boolean status =  false;
 
 		if(registration != null && !registration.equals("null")) {
 			registrationValidator.validate(registration, result);
@@ -42,8 +41,9 @@ public class RegistrationController {
 				return "registration";
 			}else {
 				registrationService.userRegistration(registration);
+				map.put("UserDtoKey", new UserDto());
 			}
 		}
-		return "registration";
+		return "login";
 	}
 }

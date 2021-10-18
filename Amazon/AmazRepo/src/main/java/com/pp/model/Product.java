@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.web.multipart.MultipartFile;
+
 @Entity
 @Table(name="product")
 public class Product {
@@ -27,7 +29,9 @@ public class Product {
 	
 	@Column(name = "EXPIRE_DATE")
 	private String expireDate;
-
+	
+//	@Column(name="ItemImage",nullable = false,columnDefinition = "MediumBlob")
+//	private byte[] file;
 	public int getProductId() {
 		return productId;
 	}

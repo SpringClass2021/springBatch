@@ -23,7 +23,7 @@ public class ProductController {
 	public String showProduct(Map<String,Object> map,Model model) {
 		System.out.println("Inside showProduct controller");
 		map.put("productDto", new Product());
-		
+
 		List<Product> products = productService.getProducts();
 		for(Product product1:products) {
 			System.out.println(product1);
@@ -35,15 +35,26 @@ public class ProductController {
 		}
 		return "product";
 	}
-	
+
 	@RequestMapping(value="/submitProduct",method = RequestMethod.POST)
-	public String submitProduct(@ModelAttribute("productDto") Product product,Model model) {
+	public String submitProduct(@ModelAttribute("productDto") Product product,Model model){
+
 		System.out.println("Inside submitProduct");
 		productService.saveProduct(product);	
-		
+
+		/*
+		 * byte[] prodImage=product.getFile(); if(prodImage.length>0){ String
+		 * paths=Paths.get("C:/Users/karan/Documents/Images/"+
+		 * product.getProductId()+".png"); try { FileWriter f = new FileWriter(new
+		 * File(paths)); prodImage.transferTo(new File(paths.toString())); } catch
+		 * (IllegalStateException e) { e.printStackTrace(); } catch (IOException e) {
+		 * e.printStackTrace(); } }
+		 */
+
+
 		List<Product> products = productService.getProducts();
 		model.addAttribute("productList",products);
-		
+
 		return "product";
 	}
 }

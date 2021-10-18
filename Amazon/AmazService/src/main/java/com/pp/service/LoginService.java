@@ -14,16 +14,21 @@ public class LoginService {
 	@Autowired
 	private LoginRepository loginRepository;
 
-	public void userSignIn(UserDto login) {
+	public boolean userSignIn(UserDto login) {
 
 		List<UserDto> list = loginRepository.adminSignIn(login);
-
+		boolean status = false;
 		for (UserDto userDto : list) {
 			if(userDto.getFirstname()!=null) {
 				System.out.println(userDto);
-			}else {
+				status = true;
+				return status;
+				
+			}else if(!status) {
 				System.out.println("User Not Found!");
 			}
 		}
+		return status;
 	}
+	
 }

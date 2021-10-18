@@ -2,6 +2,8 @@ package com.pp.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,6 +12,10 @@ import javax.persistence.Table;
 public class UserDto {
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="userId")
+	private int id;
+
 	@Column(name="firstname")
 	private String firstname;
 
@@ -63,6 +69,13 @@ public class UserDto {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String toString() {

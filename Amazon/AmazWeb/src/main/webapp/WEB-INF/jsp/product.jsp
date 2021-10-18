@@ -3,7 +3,7 @@
 
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="co"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core"%>
 
 
 <!DOCTYPE html>
@@ -15,15 +15,20 @@
 td {
 	text-align: center;
 }
-#table{
-border:1px solid black;
-border-collapse:collapse;
+
+#table {
+	border: 1px solid black;
+	border-collapse: collapse;
 }
 </style>
 </head>
 <body>
-	<p><a href="showLogin.do">Login here</a></p>
-	<p><a href="showRegistration.do">Registration here</a></p>
+	<p>
+		<a href="showLogin.do">Login here</a>
+	</p>
+	<p>
+		<a href="showRegistration.do">Registration here</a>
+	</p>
 	<form:form method="POST" action="submitProduct.do"
 		modelAttribute="productDto">
 		<table width="100%" id="table">
@@ -65,11 +70,9 @@ border-collapse:collapse;
 				<td><div class="form-control">
 						<%-- <form:errors path="subject"  class="label error-label"></form:errors> --%>
 						<label>
-							<p>
-								Product Code<small class="required"></small>
-							</p> <input type="productCode" class="inputControl"
-							placeholder="productCode" required="autofocus" maxlength="20"
-							onchange="return validate();" />
+							<p>productCode:</p> <input type="productCode"
+							class="inputControl" placeholder="productCode"
+							required="autofocus" maxlength="20" onchange="return validate();" />
 						</label>
 					</div></td>
 				<td><div class="form-control">
@@ -90,7 +93,8 @@ border-collapse:collapse;
 			</tr>
 		</table>
 	</form:form>
-	<br><br>
+	<br>
+	<br>
 	<table border="1" style="width: 100%">
 		<tr>
 			<th>PRODUCT_ID</th>
