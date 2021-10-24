@@ -1,5 +1,6 @@
 class AA{
 public static void main(String argd[]){
 System.out.println("Hello");
+System.out.println("hello from karan")
 }
 }
